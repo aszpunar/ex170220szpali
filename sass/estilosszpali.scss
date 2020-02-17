@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0 auto;
     max-width: 56em;
@@ -232,5 +235,17 @@ body {
             height: auto;
             border: 2px solid black;
         }
+    }
+}
+
+.pruebasszpali{
+    display: flex;
+    border: 2px solid black;
+    padding: 5px;
+    align-items: stretch;
+    &__captura{
+        width: 50%;
+        height: auto;
+        padding: 20px;
     }
 }
