@@ -1,0 +1,236 @@
+body {
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+}
+
+@media (min-width:650px) {
+    .navegacionszpali {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 2px solid black;
+
+        &__ruta {
+            padding: 10px;
+            border: 2px solid black;
+            display: grid;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .navegacionszpali {
+        display: grid;
+        grid-template-columns: auto;
+        border: 2px solid black;
+
+        &__ruta {
+            padding: 10px;
+            border: 2px solid black;
+            display: grid;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media (min-width:700px) {
+    .cabeceraszpali {
+        border: 2px solid black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .generalszpali {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 20% auto 20%;
+        min-height: 200px;
+
+        >div {
+            display: grid;
+            min-height: 200px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__barraizquierda {
+            min-height: 200px;
+            border: 2px solid salmon;
+        }
+
+        &__seccionprincipal {
+            border: 2px solid salmon;
+        }
+
+        &__barraderecha {
+            border: 2px solid salmon;
+        }
+    }
+
+    .pieszpali {
+        margin-top: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+@media (max-width:700px) {
+    .cabeceraszpali {
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .generalszpali {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: auto;
+        border: 2px solid black;
+        min-height: 200px;
+
+        >div {
+            padding: 20px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__barraizquierda {
+            border: 2px solid salmon;
+        }
+
+        &__seccionprincipal {
+            min-height: 200px;
+            border: 2px solid salmon;
+        }
+
+        &__barraderecha {
+            border: 2px solid salmon;
+        }
+    }
+
+    .pieszpali {
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:600px){
+    .cabeceraszpali2 {
+        border: 2px solid black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .generalszpali2 {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: auto 20vw;
+        min-height: 40vh ;
+
+        &__barraderecha {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+
+        &__seccionprincipal{
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+    }
+
+    .pieszpali2 {
+        margin-top: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+
+}
+@media (max-width:600px){
+    .cabeceraszpali2 {
+        border: 2px solid black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .generalszpali2 {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 100vw ;
+        min-height: 40vh ;
+
+        &__barraderecha {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+
+        &__seccionprincipal{
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+    }
+
+    .pieszpali2 {
+        margin-top: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:1280px){
+    .galeriaszpali{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+        &__img{
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+    }
+}
+@media (min-width:600px) and (max-width:1280px){
+    .galeriaszpali{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+
+        &__img{
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+    }
+}
+@media (max-width:600px) {
+    .galeriaszpali{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        &__img{
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+    }
+}
